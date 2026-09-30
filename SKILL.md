@@ -1,22 +1,22 @@
 ---
 name: strafe-bot-typescript-sdk
-description: "TypeScript SDK for Strafe Bot API. Use when writing TypeScript code that calls Strafe Bot API with the @strafe/strafebot package: installing it, constructing and authenticating the client, and calling API operations."
+description: "TypeScript SDK for Strafe Bot API. Use when writing TypeScript code that calls Strafe Bot API with the @strafebot/strafebot package: installing it, constructing and authenticating the client, and calling API operations."
 ---
 
 # Strafe Bot TypeScript SDK
 
-Generated TypeScript client for Strafe Bot API, published as `@strafe/strafebot`. Use the generated client instead of hand-writing HTTP requests.
+Generated TypeScript client for Strafe Bot API, published as `@strafebot/strafebot`. Use the generated client instead of hand-writing HTTP requests.
 
 ## Install
 
 ```sh
-npm install @strafe/strafebot
+npm install @strafebot/strafebot
 ```
 
 ## Client setup and authentication
 
 ```ts
-import StrafeBot from '@strafe/strafebot';
+import StrafeBot from '@strafebot/strafebot';
 
 const client = new StrafeBot({
   environment: 'app_strafe_chat_instance',
@@ -32,7 +32,7 @@ Provide credentials using the options below. Environment variables are read auto
 ## Calling operations
 
 ```ts
-import StrafeBot from '@strafe/strafebot';
+import StrafeBot from '@strafebot/strafebot';
 
 const client = new StrafeBot({
   environment: 'app_strafe_chat_instance',
@@ -50,7 +50,7 @@ Method names, parameter shapes, and response types are generated from the API de
 Non-success responses throw generated API errors. Error objects expose status, headers, response body, and request metadata where the target runtime supports it.
 
 ```ts
-import { APIError } from '@strafe/strafebot';
+import { APIError } from '@strafebot/strafebot';
 
 try {
   const user = await client.users.me.list();

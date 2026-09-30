@@ -13,7 +13,7 @@ import { writeFileSync } from 'node:fs';
 
 // The package exports the client class. The client reads auth and the base URL from the
 // environment, so it needs no constructor options to point at a server.
-import StrafeBot from '@strafe/strafebot';
+import StrafeBot from '@strafebot/strafebot';
 
 // One shared client runs every case.
 const client = new StrafeBot({ maxRetries: 2, timeout: 10_000 });

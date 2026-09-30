@@ -76,7 +76,7 @@ Complete reference of every operation, grouped by resource. See [the README](./R
 ## Setup
 
 ```ts
-import StrafeBot from '@strafe/strafebot';
+import StrafeBot from '@strafebot/strafebot';
 
 const client = new StrafeBot({
   environment: 'app_strafe_chat_instance',

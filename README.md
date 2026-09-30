@@ -25,7 +25,7 @@ The full API of this library can be found in [api.md](./api.md).
 ## Installation
 
 ```sh
-npm install @strafe/strafebot
+npm install @strafebot/strafebot
 ```
 
 <br />
@@ -33,7 +33,7 @@ npm install @strafe/strafebot
 ## Usage
 
 ```ts
-import StrafeBot from '@strafe/strafebot';
+import StrafeBot from '@strafebot/strafebot';
 
 const client = new StrafeBot({
   environment: 'app_strafe_chat_instance',
@@ -73,7 +73,7 @@ Declared schemes:
 Non-success responses throw generated API errors. Error objects expose status, headers, response body, and request metadata where the target runtime supports it.
 
 ```ts
-import { APIError } from '@strafe/strafebot';
+import { APIError } from '@strafebot/strafebot';
 
 try {
   const user = await client.users.me.list();
@@ -94,7 +94,7 @@ Documented error statuses: `400`, `401`, `403`, `404`, `429`.
 Configure the generated client by setting any of these options when you create it.
 
 ```ts
-import StrafeBot from '@strafe/strafebot';
+import StrafeBot from '@strafebot/strafebot';
 
 const client = new StrafeBot({
   timeout: 60000,

@@ -1,5 +1,5 @@
 {
-  "name": "@strafe/strafebot",
+  "name": "@strafebot/strafebot",
   "version": "0.1.0",
   "description": "REST API for Strafe — a federated, self-hostable chat platform.",
   "author": "Strafe Bot",
